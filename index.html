@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landmark Capital Advisors</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+    background:#f5f7fb;
+    color:#1a1a1a;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 8%;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+}
+
+nav h1{font-size:20px;font-weight:600;color:#0a2540;}
+
+nav ul{display:flex;gap:25px;list-style:none;}
+nav ul li a{text-decoration:none;color:#333;font-size:14px;}
+nav ul li a:hover{color:#0a66ff;}
+
+.hero{
+    padding:100px 10%;
+    text-align:center;
+    background:linear-gradient(120deg,#0a66ff,#4f9cff);
+    color:#fff;
+}
+
+.hero h1{font-size:42px;margin-bottom:15px;}
+.hero p{max-width:700px;margin:auto;opacity:0.9;}
+
+.section{padding:70px 10%;}
+
+.section h2{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#0a2540;
+}
+
+.section p{color:#555;max-width:850px;}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{transform:translateY(-8px);}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px;
+    text-align:center;
+}
+
+.stat h3{color:#0a66ff;font-size:28px;}
+.stat p{color:#777;}
+
+footer{
+    background:#0a2540;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+.fade{opacity:0;transform:translateY(30px);transition:0.8s;}
+.fade.show{opacity:1;transform:translateY(0);}
+
+</style>
+</head>
+<body>
+
+<nav>
+<h1>Landmark Capital</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home" class="hero fade">
+<h1>Redefining Real Estate Investments</h1>
+<p>
+Landmark Capital Advisors Private Limited is a modern investment firm focused on unlocking value in India’s evolving real estate market.
+</p>
+</section>
+
+<section id="about" class="section fade">
+<h2>About Landmark Capital Advisors</h2>
+<p>
+Landmark Capital Advisors Private Limited is a forward-thinking real estate investment and asset management firm committed to delivering consistent and high-quality investment outcomes. Known widely as landmark capital advisors, the company focuses on identifying opportunities that combine strong fundamentals with long-term growth potential.
+<br><br>
+The leadership, including Ashish Joshi Landmark Capital Advisors, brings extensive industry expertise and strategic vision. When discussing landmark capital advisors owner, the emphasis lies on professional leadership backed by years of experience in real estate and financial markets.
+<br><br>
+The firm actively manages investments rather than taking a passive approach, ensuring that every project is optimized for returns. With increasing visibility in landmark capital advisors news, the company continues to strengthen its presence across India’s high-growth sectors.
+</p>
+
+<div class="stats">
+<div class="stat"><h3>70+</h3><p>Years Experience</p></div>
+<div class="stat"><h3>3+</h3><p>Sectors</p></div>
+<div class="stat"><h3>100%</h3><p>Active Strategy</p></div>
+</div>
+</section>
+
+<section id="services" class="section fade">
+<h2>What We Do</h2>
+<div class="grid">
+<div class="card"><h3>Investment Strategy</h3><p>Focused investments in warehousing, residential and land projects.</p></div>
+<div class="card"><h3>Fund Management</h3><p>Managing AIFs to deliver strong risk-adjusted returns.</p></div>
+<div class="card"><h3>Asset Optimization</h3><p>Enhancing value through active management and execution.</p></div>
+<div class="card"><h3>Custom Solutions</h3><p>Tailored investment plans for HNIs and institutions.</p></div>
+</div>
+</section>
+
+<section id="contact" class="section fade">
+<h2>Contact</h2>
+<p>
+Connect with Landmark Capital Advisors Private Limited for investment opportunities, partnerships, and latest updates related to Landmark Capital Advisors news.
+</p>
+</section>
+
+<footer>
+<p>© 2026 Landmark Capital Advisors Private Limited</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show')}})
+});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
+
+
