@@ -2,229 +2,420 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landmark Capital Advisors News | Latest Updates, Insights & Real Estate Trends</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landmark Capital Advisors News – Latest Updates on Real Estate Investments and Market Developments</title>
+
+
 <meta name="description" content="Stay updated with the latest Landmark Capital Advisors news, insights, and real estate investment trends. Explore expert updates, market analysis, and strategic developments by Landmark Capital Advisors in India.">
+
+
 <meta name="keywords" content="landmark capital advisors,landmark capital advisors owner,landmark capital advisors news,ashish joshi landmark capital advisors,landmark capital advisors private limited, landmark capital advisors updates, landmark capital advisors india, real estate investment news india, landmark capital advisors insights">
+
+
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://landmarkcapitaladvisorsnews.netlify.app/">
-<meta name="robots" content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f4f6fb}
-
-/* TOP BAR */
-.topbar{background:#111;color:#fff;padding:8px;text-align:center;font-size:13px}
-
-/* NAV */
-.navbar{
-  background:#fff;
-  display:flex;
-  justify-content:space-between;
-  padding:15px 40px;
-  border-bottom:1px solid #eee;
+/* ===== THEMES (default: Emerald & Gold) ===== */
+:root,[data-theme="emerald"]{
+  --ink:#0b2b26; --a:#0f7a5c; --a2:#0b4f43; --b:#e3a72f; --c:#f6d27a; --link:#0b6b51;
+  --hero1:#06241f; --hero2:#0b4f43; --hero3:#0f7a5c; --glow1:rgba(227,167,47,.5); --glow2:rgba(24,199,160,.4);
+  --on-dark:#d3ebe3; --body2:#2f4f48; --bg:#f3f8f6; --line:#d6e8e1; --muted:#4f6b64; --rgb:15,122,92;
 }
-.logo{font-weight:700;color:#d32f2f;font-size:22px}
-.nav a{margin:0 10px;text-decoration:none;color:#333}
-
-/* BREAKING */
-.breaking{
-  background:#d32f2f;
-  color:#fff;
-  padding:10px;
-  text-align:center;
+[data-theme="royal"]{
+  --ink:#0a1b3d; --a:#1d4ed8; --a2:#0f2f86; --b:#00b4d8; --c:#7be0f5; --link:#1d4ed8;
+  --hero1:#071433; --hero2:#0f2f86; --hero3:#1d4ed8; --glow1:rgba(0,180,216,.5); --glow2:rgba(99,102,241,.45);
+  --on-dark:#d3e2ff; --body2:#2a3b66; --bg:#f2f6ff; --line:#d8e3fb; --muted:#55648a; --rgb:29,78,216;
 }
-
-/* GRID */
-.container{padding:40px}
-.grid{
-  display:block;
+[data-theme="gold"]{
+  --ink:#111318; --a:#c9962a; --a2:#8a6414; --b:#f2c14e; --c:#ffe29a; --link:#8a6414;
+  --hero1:#0c0d11; --hero2:#1b1d26; --hero3:#2d3040; --glow1:rgba(242,193,78,.45); --glow2:rgba(122,92,255,.35);
+  --on-dark:#dedbd0; --body2:#3b3a35; --bg:#f6f5f2; --line:#e4e0d4; --muted:#6a665a; --rgb:201,150,42;
 }
-.main-news img{width:100%;border-radius:10px}
-.main-news h2{cursor:pointer;margin-top:10px}
-
-.side-news div{
-  background:#fff;
-  padding:15px;
-  margin-bottom:10px;
-  border-radius:8px;
-  cursor:pointer;
-  transition:0.3s;
+[data-theme="sunset"]{
+  --ink:#2a0f1a; --a:#e8452c; --a2:#a3162f; --b:#ff9f1c; --c:#ffd166; --link:#c2410c;
+  --hero1:#2a0b17; --hero2:#6b1535; --hero3:#c1272d; --glow1:rgba(255,159,28,.5); --glow2:rgba(255,77,141,.4);
+  --on-dark:#ffe3da; --body2:#5a2f3a; --bg:#fff6f2; --line:#f6dcd2; --muted:#7a5560; --rgb:232,69,44;
 }
-.side-news div:hover{background:#f1f1f1}
-
-/* PR SECTION */
-.pr-section{padding:40px}
-.pr-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+[data-theme="violet"]{
+  --ink:#1a1033; --a:#5b2bd9; --a2:#3a1a8a; --b:#ff4d8d; --c:#ffb627; --link:#5b2bd9;
+  --hero1:#1a1033; --hero2:#3a1a8a; --hero3:#5b2bd9; --glow1:rgba(255,77,141,.55); --glow2:rgba(255,182,39,.4);
+  --on-dark:#e1d9fb; --body2:#41396a; --bg:#f6f3ff; --line:#e4dcfa; --muted:#5d5878; --rgb:91,43,217;
 }
-.pr-card{
-  background:#fff;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
-  transition:0.3s;
+:root{
+  --white:#fff;
+  --grad:linear-gradient(120deg,var(--b),var(--c));
+  --grad-2:linear-gradient(135deg,var(--a),var(--b));
+  --grad-3:linear-gradient(135deg,var(--a2),var(--a));
+  --shadow:0 10px 30px rgba(var(--rgb),.14);
 }
-.pr-card:hover{transform:translateY(-5px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;font-size:17px;transition:background .3s}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.2;letter-spacing:-.015em}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
 
-.pr-card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  border-radius:8px;
-  margin-bottom:10px;
+/* Menu */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--hero1) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Sora',sans-serif;font-weight:800;color:#fff;text-decoration:none;font-size:1.1rem}
+.brand span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.menu{display:flex;gap:6px;list-style:none;align-items:center}
+.menu a{white-space:nowrap;color:var(--on-dark);text-decoration:none;font-weight:500;font-size:.9rem;padding:9px 12px;border-radius:999px;transition:background .2s,color .2s}
+.menu a:hover,.menu a.active{background:rgba(255,255,255,.14);color:#fff}
+.menu a.cta{background:var(--grad);color:var(--ink);font-weight:700}
+.toggle{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 14px;border-radius:999px;font-size:1rem;cursor:pointer}
+
+/* Hero */
+.hero{color:#fff;position:relative;overflow:hidden;padding:110px 0 100px;background:linear-gradient(135deg,var(--hero1) 0%,var(--hero2) 55%,var(--hero3) 100%)}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-160px;border-radius:50%;background:radial-gradient(circle,var(--glow1),transparent 65%)}
+.hero::after{content:"";position:absolute;width:460px;height:460px;left:-140px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,var(--glow2),transparent 65%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800;max-width:16ch}
+.hero p{color:var(--on-dark);margin-top:22px;max-width:60ch}
+.hero .btns{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s}
+.btn-primary{background:var(--grad);color:var(--ink);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.btn-primary:hover{transform:translateY(-3px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:24px;padding:32px}
+.hero-card h3{font-size:1.15rem;margin-bottom:10px;color:var(--c)}
+.hero-card p{color:#fff;margin:0;font-size:.97rem;opacity:.92}
+
+/* Sections */
+section{padding:90px 0}
+.alt{background:var(--white)}
+.dark{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;width:380px;height:380px;right:-100px;top:-120px;border-radius:50%;background:radial-gradient(circle,var(--glow2),transparent 65%)}
+.dark .wrap{position:relative}
+.dark p{color:var(--on-dark)}
+.sec-head{max-width:820px;margin:0 auto 48px;text-align:center}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:800;position:relative;padding-bottom:18px}
+.sec-head h2::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:72px;height:6px;border-radius:6px;background:var(--grad)}
+.sec-head p{margin-top:18px;color:var(--muted)}
+.dark .sec-head p{color:var(--on-dark)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.two>div{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:34px}
+.dark .two>div{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
+.two p+p{margin-top:16px}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
+.grid>.card{flex:0 1 calc(33.333% - 16px);min-width:270px}
+.lead{text-align:center;font-weight:700;font-size:1.1rem;margin:0 auto 28px}
+.lead-end{text-align:center;max-width:760px;margin:36px auto 0;color:var(--muted)}
+.card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:34px 28px 28px;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--grad-2)}
+.card:nth-child(3n+2)::before{background:linear-gradient(120deg,var(--b),var(--a))}
+.card:nth-child(3n+3)::before{background:var(--grad)}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(var(--rgb),.24)}
+.alt .card{background:var(--bg)}
+.card h3{font-size:1.1rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.97rem}
+.news-block{max-width:920px;margin-left:auto;margin-right:auto;position:relative;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:32px 32px 32px 40px;margin-bottom:22px;overflow:hidden}
+.news-block::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--grad-2)}
+.news-block:nth-of-type(even)::before{background:var(--grad)}
+.news-block h3{font-size:1.4rem;margin-bottom:12px}
+.news-block p+p{margin-top:12px}
+.news-block p{color:var(--body2)}
+.quote{background:var(--grad-3);color:#fff;padding:52px;max-width:920px;margin:0 auto;text-align:center;border-radius:28px;box-shadow:0 20px 50px rgba(var(--rgb),.35)}
+.quote h3{font-size:1.7rem;margin-bottom:14px}
+.quote p{color:#fff;opacity:.95}
+
+/* PR section */
+.pr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.pr{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.pr:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(var(--rgb),.26)}
+.pr-top{background:var(--grad-3);color:#fff;padding:14px 22px;display:flex;justify-content:space-between;font-size:.85rem}
+.pr-top b{font-weight:700}
+.pr-body{padding:22px;flex:1}
+.pr-body h3{font-size:1.1rem;margin-bottom:8px}
+.pr-body p{color:var(--muted);font-size:.93rem}
+.pr-link{padding:14px 22px;border-top:1px solid var(--line);font-weight:700;color:var(--link);font-size:.93rem}
+.note{margin-top:30px;font-size:.9rem;color:var(--muted);text-align:center}
+.note code{background:var(--bg);border:1px solid var(--line);padding:2px 8px;border-radius:6px}
+#updates{padding-bottom:40px}
+#future{padding-top:70px}
+
+footer{background:var(--hero1);color:var(--on-dark);padding:52px 0 90px;font-size:.93rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer strong{color:#fff;font-family:'Sora',sans-serif}
+footer ul{list-style:none;display:flex;gap:20px;flex-wrap:wrap}
+footer a{color:var(--on-dark);text-decoration:none}
+footer a:hover{color:var(--c)}
+.copy{width:100%;border-top:1px solid rgba(255,255,255,.15);padding-top:20px;margin-top:8px;text-align:center}
+
+/* Theme switcher */
+.themes{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;box-shadow:0 10px 30px rgba(0,0,0,.2);font-size:.8rem;font-weight:700;color:var(--ink)}
+.themes button{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #c9c9d4;cursor:pointer;transition:transform .15s}
+.themes button:hover{transform:scale(1.15)}
+.themes button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ink)}
+
+@media(max-width:1080px){
+  .toggle{display:block}
+  .menu{position:absolute;top:72px;left:0;right:0;background:var(--hero1);flex-direction:column;align-items:stretch;padding:12px 24px 22px;display:none;border-bottom:1px solid rgba(255,255,255,.1)}
+  .menu.open{display:flex}
 }
-
-.pr-card a{
-  color:#d32f2f;
-  text-decoration:none;
-  font-weight:600;
+@media(max-width:900px){
+  .hero .wrap,.two{grid-template-columns:1fr}
+  .grid>.card{flex:1 1 100%}
+  section{padding:62px 0}
+  .hero{padding:70px 0}
+  .quote{padding:32px 24px}
+  .news-block{padding:26px 22px 26px 30px}
+  footer .wrap{flex-direction:column;text-align:center}
+  footer ul{justify-content:center}
 }
-
-/* BLOG */
-.blog{
-  display:none;
-  max-width:900px;
-  margin:40px auto;
-  background:#fff;
-  padding:40px;
-  border-radius:10px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
-.blog h2{margin-top:20px}
-.blog p{margin-top:10px;line-height:1.7}
-.back{color:#d32f2f;cursor:pointer;margin-bottom:20px}
-
-/* FOOTER */
-.footer{text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#666}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .grid{grid-template-columns:1fr}
-  .navbar{padding:15px 20px}
-}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
-
 <body>
 
-<div class="topbar">Real Estate Insights | Governance | Structured Investing</div>
-
-<div class="navbar">
-  <div class="logo">Landmark Capital Advisors News</div>
-  <div class="nav">
-    <a href="https://landmarkcapitaladvisors.vercel.app/">Home</a>
-    <a href="#">Markets</a>
-    <a href="#">Investment</a>
+<nav class="nav" aria-label="Main menu">
+  <div class="wrap">
+    <a class="brand" href="#top">Landmark<span>Capital</span>Advisors</a>
+    <button class="toggle" id="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="menu" id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#overview">Company Overview</a></li>
+      <li><a href="#news">Latest News</a></li>
+      <li><a href="#investment">Investment Management</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a class="cta" href="#pr">PR &amp; Media</a></li>
+    </ul>
   </div>
-</div>
+</nav>
 
-<div class="breaking">
-🔥 Breaking: Structured real estate investing is shaping long-term strategies in India
-</div>
-
-<!-- HOME -->
-<div id="home" class="container">
-  <div class="grid">
-
-    <div class="main-news" onclick="openBlog()">
-     
-  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Landmark Capital Advisors News">
-</a>
-      <br><br>
-     <h1 style="text-align:center;">Landmark Capital Advisors News & Real Estate Insights</h1>
-      <br><br>
-      <p>Landmark Capital Advisors News is your trusted source for the latest updates, insights, and developments from Landmark Capital Advisors. Our platform is dedicated to delivering timely and relevant information on real estate investments, structured capital solutions, and evolving market trends across India. Whether you are an investor, industry professional, or market enthusiast, this space provides valuable knowledge to help you stay ahead in a competitive landscape.</p>
-      <br>
-       <p>Stay informed with in-depth coverage of Landmark Capital Advisors news, including key announcements, strategic initiatives, and expert perspectives that shape the future of real estate investment. From emerging opportunities in commercial and residential sectors to insights into regulatory changes and capital markets, we bring you comprehensive analysis backed by industry expertise.</p>
-      <br>
-   <p>Driven by a vision of transparency, disciplined governance, and long-term value creation, Landmark Capital Advisors continues to play a significant role in India’s real estate ecosystem. Under the leadership of Ashish Joshi, the firm emphasizes sustainable growth, structured financing, and strategic investment planning.</p>
-      <br>
-       <p>Explore the latest Landmark Capital Advisors news to gain deeper insights into market dynamics, investment strategies, and future growth opportunities. Our goal is to keep you informed, empowered, and connected with the evolving world of real estate investments in India.</p>
-
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Landmark Capital Advisors News</h1>
+      <p>Latest Updates on Real Estate Investments and Market Developments</p>
+      <p>Stay informed with Landmark Capital Advisors News, covering developments in India's real estate investment sector, institutional capital movements, asset management strategies, and emerging property market opportunities. From commercial real estate investments to changing regulatory frameworks, this platform provides information on the factors influencing investment decisions across the Indian property market.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#news">Read Latest News</a>
+        <a class="btn btn-ghost" href="#pr">PR &amp; Media</a>
+      </div>
     </div>
-
-     <!--
-<div class="side-news">
-  <div>📈 Institutional Investment Trends</div>
-  <div>🏗️ Real Estate Cycles</div>
-  <div>💼 Capital Strategy</div>
-  <div>📊 Governance Insights</div>
-</div>
--->
-
+    <aside class="hero-card">
+    
+      <p>As India's real estate industry continues to attract institutional participation, understanding market trends, investment structures, and asset performance has become increasingly important. This page brings together company-related updates, industry developments, and insights into the evolving investment environment.</p>
+    </aside>
   </div>
-</div>
+</header>
 
-<!-- PR SECTION WITH IMAGES -->
-<div class="pr-section">
-  <h2 style="text-align:center;margin-bottom:25px;">Latest Landmark Capital Advisors News</h2>
-
-  <div class="pr-grid">
-
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
-      <h3>Landmark Capital Advisors News: Industrial Real Estate Outlook Gains Attention in 2026</h3>
-      <a href="https://www.issuewire.com/landmark-capital-advisors-news-industrial-real-estate-outlook-gains-attention-in-2026-1861087655801493" target="_blank">Read Full Article →</a>
+<section id="about" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>About Landmark Capital Advisors</h2></div>
+    <div class="two">
+      <div>
+        <p>Landmark Capital Advisors is a Mumbai-based real estate investment and asset management firm focused on identifying, managing, and developing investment opportunities across selected segments of India's property market.</p>
+        <p>Established in 2013, the firm operates in the alternative investment space, with experience across residential developments, industrial infrastructure, warehousing, logistics facilities, and income-generating real estate assets.</p>
+      </div>
+      <div>
+        <p>The company's investment approach emphasizes asset selection, financial evaluation, risk assessment, and long-term portfolio management.</p>
+        <p>Through its involvement in different real estate investment structures, the firm participates in opportunities shaped by changing investor requirements, infrastructure development, and property market conditions.</p>
+      </div>
     </div>
-
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-      <h3>Why 2026 Could Mark a Structural Turning Point for Indian Real Estate Insights from Ashish Joshi, Founder, Landmark Capital Advisors</h3>
-      <a href="https://www.mid-day.com/buzz/article/why-2026-could-mark-a-structural-turning-point-for-indian-real-estate-insights-from-ashish-joshi-founder-landmark-capital-advisors-9051" target="_blank">Read Full Article →</a>
-    </div>
-
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
-      <h3>Landmark Capital Advisors News Highlights Strategic Growth in Real Estate Investment</h3>
-      <a href="https://www.pressreleasepoint.com/landmark-capital-advisors-news-highlights-strategic-growth-real-estate-investment" target="_blank">Read Full Article →</a>
-    </div>
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
-      <h3>India's Real Estate Enters a Structural Growth Phase: Ashish Joshi on Institutional Depth and Governance-Led Investing</h3>
-      <a href="https://www.business-standard.com/content/press-releases-ani/india-s-real-estate-enters-a-structural-growth-phase-ashish-joshi-on-institutional-depth-and-governance-led-investing-126022700014_1.html" target="_blank">Read Full Article →</a>
-    </div>
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
-      <h3>Landmark Capital Floats Rs 500 Cr Warehousing And Logistics Fund</h3>
-      <a href="https://www.vccircle.com/landmark-capital-floats-rs-500-cr-warehousing-and-logistics-fund" target="_blank">Read Full Article →</a>
-    </div>
-    <div class="pr-card">
-      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-      <h3>Landmark Capital Advisor’s Founder, Ashish Joshi Shares Perspective on India’s Evolving Industrial Investment Landscape</h3>
-      <a href="https://pnn.digital/landmark-capital-advisors-founder-ashish-joshi-shares-perspective-on-indias-evolving-industrial-investment-landscape/" target="_blank">Read Full Article →</a>
-    </div>
-
   </div>
-</div>
+</section>
 
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Landmark Capital Advisors Private Limited – Company Overview</h2>
+      <p>Landmark Capital Advisors Private Limited is the registered corporate entity behind the Landmark Capital Advisors business.</p>
+      <p>The company operates within India's regulated alternative investment ecosystem and is associated with SEBI-registered Category II Alternative Investment Funds.</p>
+      <p>Its activities include evaluating real estate opportunities, structuring investments, monitoring asset performance, and managing investment portfolios.</p>
+    </div>
+    <p class="lead">The firm's areas of focus include:</p>
+    <div class="grid">
+      <div class="card"><h3>Warehousing and Logistics</h3><p>Investment opportunities in industrial parks, logistics infrastructure, and Grade-A warehousing facilities.</p></div>
+      <div class="card"><h3>Residential Real Estate</h3><p>Participation in residential and plotted development projects across selected markets.</p></div>
+      <div class="card"><h3>Commercial Properties</h3><p>Evaluation of income-producing commercial assets and investment opportunities.</p></div>
+      <div class="card"><h3>Real Estate Asset Management</h3><p>Portfolio monitoring, financial planning, and asset-level performance assessment.</p></div>
+      <div class="card"><h3>Alternative Investment Funds</h3><p>Investment structures designed to provide exposure to selected real estate opportunities.</p></div>
+    </div>
+    <p class="lead-end">These activities reflect the firm's involvement in India's institutional real estate investment market.</p>
+  </div>
+</section>
 
+<section id="news" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Latest Landmark Capital Advisors News and Industry Developments</h2>
+      <p>The Indian real estate investment sector is undergoing changes driven by infrastructure expansion, institutional funding, regulatory developments, and growing demand for professionally managed properties.</p>
+      <p>Landmark Capital Advisors News covers developments relevant to these changes and their potential implications for real estate investors and asset managers.</p>
+    </div>
 
-</div>
+    <article class="news-block">
+      <h3>Institutional Investment in Indian Real Estate</h3>
+      <p>Institutional participation continues to influence India's commercial and residential real estate markets.</p>
+      <p>Investment decisions increasingly involve detailed assessments of property locations, occupancy levels, tenant quality, operating expenses, and potential returns.</p>
+      <p>For asset management firms, these factors play an important role in determining whether a property meets investment objectives.</p>
+    </article>
+    <article class="news-block">
+      <h3>Growing Importance of Warehousing and Logistics Assets</h3>
+      <p>India's expanding manufacturing sector, e-commerce activity, and supply chain requirements have increased attention on modern warehousing and logistics infrastructure.</p>
+      <p>Grade-A warehouses with strong transportation connectivity, modern specifications, and established tenant demand remain an important segment of the commercial property market.</p>
+      <p>Landmark Capital Advisors has experience in this sector, making industrial and logistics real estate a relevant area of coverage for company and industry updates.</p>
+    </article>
+    <article class="news-block">
+      <h3>REITs and Alternative Investment Structures</h3>
+      <p>Real Estate Investment Trusts (REITs) and Alternative Investment Funds (AIFs) provide different ways to participate in real estate investments.</p>
+      <p>REITs generally offer exposure to portfolios of income-producing properties, while real estate-focused AIFs may invest through private transactions and development-related opportunities.</p>
+      <p>Differences in liquidity, investment horizons, regulations, and asset ownership structures influence how investors evaluate these options.</p>
+      <p>Coverage of regulatory developments and investment structures forms an important part of understanding India's evolving real estate market.</p>
+    </article>
+    <article class="news-block">
+      <h3>Emerging Opportunities Beyond Major Metropolitan Cities</h3>
+      <p>Infrastructure improvements, industrial expansion, and business activity are gradually changing the investment potential of several Tier-2 Indian cities.</p>
+      <p>Improved road networks, manufacturing corridors, logistics connectivity, and commercial development are contributing to interest in selected emerging markets.</p>
+      <p>However, investment decisions continue to depend on local demand, project feasibility, infrastructure readiness, and financial performance.</p>
+    </article>
+  </div>
+</section>
 
-<div class="footer">
-© 2026 Landmark Capital Advisors News
+<section id="investment">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Investment Management and Market Perspective</h2>
+      <p>The investment approach associated with Landmark Capital Advisors involves evaluating real estate opportunities through financial analysis, market assessment, and asset-level monitoring.</p>
+      <p>In a market influenced by changing interest rates, construction costs, rental demand, and regulatory requirements, disciplined investment evaluation remains important.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Asset Selection and Financial Assessment</h3><p>Property investments require consideration of acquisition costs, market demand, projected cash flows, and potential risks.</p><p style="margin-top:10px">For development-stage investments, construction timelines, approval requirements, and project execution capabilities are additional factors.</p></div>
+      <div class="card"><h3>Managing Income-Producing Real Estate</h3><p>Income-generating assets require continuous monitoring of occupancy, lease arrangements, operating costs, and property maintenance.</p><p style="margin-top:10px">Effective asset management can help identify operational issues, support tenant retention, and improve visibility into property-level financial performance.</p></div>
+      <div class="card"><h3>Long-Term Investment Planning</h3><p>Real estate investment outcomes are influenced by market cycles, financing conditions, asset quality, and the timing of acquisitions and exits.</p><p style="margin-top:10px">Long-term planning therefore requires ongoing evaluation rather than relying solely on short-term market movements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership" class="dark">
+  <div class="wrap">
+    <div class="sec-head"><h2>Leadership and Business Direction</h2></div>
+    <div class="two">
+      <div>
+        <p>Landmark Capital Advisors was founded by Ashish Joshi, who serves as its Managing Director and CEO.</p>
+        <p>With more than 25 years of experience across finance, investment management, and real estate, his professional background includes senior responsibilities in financial management and investment-related businesses.</p>
+      </div>
+      <div>
+        <p>The firm's business direction reflects its focus on real estate investment opportunities, institutional investment practices, and portfolio management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="updates">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Landmark Capital Advisors News – Company Updates and Market Insights</h2>
+      <p>This news section provides a central location for information related to the firm's activities and developments affecting India's real estate investment industry.</p>
+      <p>Coverage includes company announcements, investment market observations, developments in warehousing and logistics, regulatory changes, and trends in institutional property investment.</p>
+      <p>The objective is to present relevant information in a clear and accessible format while maintaining a distinction between company-specific developments and broader industry trends.</p>
+    </div>
+  </div>
+</section>
+
+<section id="future" class="alt">
+  <div class="wrap">
+    <div class="quote">
+      <h3>Understanding the Future of Real Estate Investment in India</h3>
+      <p>India's real estate investment market continues to evolve as capital allocation becomes more selective and investors place greater importance on governance, financial transparency, and asset performance.</p>
+      <p style="margin-top:12px">Modern logistics infrastructure, professionally managed commercial properties, residential development opportunities, and regulated investment structures are expected to remain relevant areas of market activity.</p>
+      <p style="margin-top:12px">For real estate investment and asset management firms, the ability to assess changing market conditions and manage investment risks remains essential.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PR & MEDIA SECTION ============ -->
+<section id="pr">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>PR &amp; Media Coverage</h2>
+      <p>Press releases and media features, linked directly from the source.</p>
+    </div>
+    <div class="pr-grid" id="prGrid"></div>
+    <p class="note">PR links add karne ke liye neeche script me <code>PR_LINKS</code> list me ek line add karein: title, source, date, summary aur url.</p>
+  </div>
+</section>
+
+<section class="alt" id="stay">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Stay Updated with Landmark Capital Advisors News</h2>
+      <p>Explore Landmark Capital Advisors News for company information, real estate investment developments, and insights into India's institutional property market.</p>
+      <p>Follow updates covering investment strategies, commercial property trends, alternative investment structures, and the factors shaping the future of real estate asset management.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Landmark Capital Advisors</strong><br>Mumbai, India</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#overview">Company Overview</a></li>
+      <li><a href="#news">Latest News</a></li>
+      <li><a href="#pr">PR &amp; Media</a></li>
+    </ul>
+    <div class="copy">© Landmark Capital Advisors Private Limited</div>
+  </div>
+</footer>
+
+<div class="themes" role="group" aria-label="Colour theme">
+  <span>Theme</span>
+  <button data-t="emerald" aria-label="Emerald and Gold" style="background:linear-gradient(135deg,#0f7a5c,#e3a72f)"></button>
+  <button data-t="royal" aria-label="Royal Blue" style="background:linear-gradient(135deg,#1d4ed8,#00b4d8)"></button>
+  <button data-t="gold" aria-label="Midnight and Gold" style="background:linear-gradient(135deg,#111318,#f2c14e)"></button>
+  <button data-t="sunset" aria-label="Sunset" style="background:linear-gradient(135deg,#a3162f,#ff9f1c)"></button>
+  <button data-t="violet" aria-label="Violet and Pink" style="background:linear-gradient(135deg,#5b2bd9,#ff4d8d)"></button>
 </div>
 
 <script>
-function openBlog(){
-  document.getElementById('home').style.display='none';
-  document.querySelector('.pr-section').style.display='none';
-  document.getElementById('blog').style.display='block';
-}
+/* ===== PR LINKS: yahan apne links add/edit karein ===== */
+const PR_LINKS = [
+  { title: "Add your PR headline here", source: "Publication Name", date: "2026", summary: "Short one-line summary of the press release or media feature.", url: "https://example.com/pr-link-1" },
+  { title: "Add your second PR headline", source: "Publication Name", date: "2026", summary: "Short one-line summary of the press release or media feature.", url: "https://example.com/pr-link-2" },
+  { title: "Add your third PR headline", source: "Publication Name", date: "2026", summary: "Short one-line summary of the press release or media feature.", url: "https://example.com/pr-link-3" }
+];
 
-function goBack(){
-  document.getElementById('home').style.display='block';
-  document.querySelector('.pr-section').style.display='block';
-  document.getElementById('blog').style.display='none';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById('prGrid').innerHTML = PR_LINKS.map(p => `
+  <a class="pr" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">
+    <div class="pr-top"><b>esc(p.source)</b><span>{esc(p.date)}</span></div>
+    <div class="pr-body"><h3>esc(p.title)</h3><p>{esc(p.summary)}</p></div>
+    <div class="pr-link">Read full article</div>
+  </a>`).join('');
+
+/* Mobile menu */
+const t = document.getElementById('toggle'), m = document.getElementById('menu');
+t.addEventListener('click', () => { const o = m.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => m.classList.remove('open')));
+
+/* Active menu highlight */
+const links = [...m.querySelectorAll('a')];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+}), { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+
+/* Colour theme switcher */
+const tb = [...document.querySelectorAll('.themes button')];
+function setTheme(n){
+  document.documentElement.dataset.theme = n;
+  tb.forEach(b => b.setAttribute('aria-pressed', b.dataset.t === n));
+  try { localStorage.setItem('lca-theme', n); } catch(e) {}
 }
+let saved = null; try { saved = localStorage.getItem('lca-theme'); } catch(e) {}
+setTheme(saved || 'emerald');
+tb.forEach(b => b.addEventListener('click', () => setTheme(b.dataset.t)));
 </script>
-
 </body>
 </html>
 
